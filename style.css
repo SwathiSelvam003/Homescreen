@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.header .menu {
+  display: flex;
+  gap: 1rem;
+}
+.header .menu .search-btn,
+.header .menu .hamburger-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content .badge {
+  display: inline-block;
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.main-content .main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.main-content .sub-heading {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+.main-content .trust-pilot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main-content .trust-pilot .trust-icon {
+  font-size: 1.2rem;
+  color: #000;
+}
+.main-content .trust-pilot .rating {
+  font-size: 1rem;
+}
+.main-content .trust-pilot .rating strong {
+  font-weight: bold;
+}
+.main-content .media-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.main-content .media-container .play-card {
+  flex: 1;
+  background: linear-gradient(135deg, yellow, rgb(16, 140, 197));
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.main-content .media-container .play-card .play-button {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.main-content .media-container .chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  color: #000;
+}
+.main-content .media-container .chart .chart-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:black;
+ 
+}
+.main-content .media-container .chart .chart-value.secondary {
+  color: #888;
+  
+}
+
+.main-content .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-content .actions .signup-btn,
+.main-content .actions .explore-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.main-content .actions .signup-btn {
+  background: #000;
+  color: #fff;
+}
+.main-content .actions .explore-btn {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+@media (min-width: 768px) {
+  .main-content .main-heading {
+    font-size: 3rem;
+  }
+  .media-container {
+    gap: 2rem;
+  }
+  .media-container .play-card {
+    height: 200px;
+  }
+  .media-container .chart {
+    height: 200px;
+  }
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
